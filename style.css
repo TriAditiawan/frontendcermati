@@ -259,8 +259,11 @@ footer p {
     width: 70px;
   }
   /* box-up-cookie */
+  .none-cookie .box-up-cookie {
+    transform: translateY(-130%) !important;
+  }
   .box-up-cookie {
-    height: 120px;
+    height: 130px;
   }
   .box-up-cookie .flex {
     display: block;
