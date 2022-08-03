@@ -292,6 +292,9 @@ footer p {
     width: 90%;
     margin: auto;
   }
+  .box-up-cookie p {
+    width: 100%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
