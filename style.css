@@ -17,7 +17,7 @@ body {
 }
 /* slidingx */
 .slidingx {
-  opacity: 0% !important;
+  display: none !important;
 }
 /* cookie */
 .box-up-cookie {
@@ -119,11 +119,8 @@ body {
   border-radius: 3px;
 }
 /* jumbotron */
-.none-cookie .jumbotron {
-  transform: translateY(-50px);
-}
 .jumbotron {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 100%;
   height: 100vh;
   background-image: url(./assets/work-desk__dustin-lee.jpg);
@@ -131,6 +128,7 @@ body {
   background-size: cover;
   position: relative;
 }
+
 .jumbotron nav img {
   display: flex;
   justify-content: end;
@@ -146,12 +144,19 @@ body {
   position: absolute;
   background-color: rgba(1, 30, 46, 0.6);
 }
-.jumbotron > * {
+.jumbotron .flex > *,
+.jumbotron nav {
   text-align: center;
   position: relative;
   text-shadow: 1px 1px 2px rgb(0, 0, 0.5);
   color: white;
   z-index: 3;
+}
+.jumbotron .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .jumbotron .h1 {
   font-size: 40px;
@@ -183,9 +188,6 @@ body {
   color: rgb(0, 74, 117) !important;
 }
 /* help you */
-.none-cookie .help-you {
-  transform: translateY(-50px);
-}
 .help-you {
   background-color: #e5e5e5;
   padding: 70px 0;
@@ -227,9 +229,6 @@ body {
   height: auto;
 }
 /* footer */
-.none-cookie footer {
-  transform: translateY(-50px);
-}
 footer {
   background-color: #060726;
   height: 100px;
@@ -299,10 +298,40 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .jumbotron .h1 {
+    top: 250px;
+  }
+  .jumbotron h2 {
+    top: 260px;
+  }
+  .jumbotron p {
+    top: 270px;
+  }
+  .jumbotron button {
+    top: 300px;
+  }
+  .sliding-panel {
+    width: 70%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .jumbotron .h1 {
+    top: 150px;
+  }
+  .jumbotron h2 {
+    top: 160px;
+  }
+  .jumbotron p {
+    top: 170px;
+  }
+  .jumbotron button {
+    top: 205px;
+  }
+  .sliding-panel {
+    width: 40%;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
